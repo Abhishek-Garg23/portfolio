@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testimonial.css";
+import "./Education.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -10,7 +10,7 @@ import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
 import profilePic4 from "../../img/profile4.jpg";
 
-const Testimonial = () => {
+const Education = () => {
   const clients = [
     {
       img: profilePic1,
@@ -35,13 +35,13 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="t-wrapper" id="testimonial">
-      <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+    <div className="e-wrapper" id="education">
+      <div className="e-heading">
+        <span>My </span>
+        <span>Education </span>
+        <span>Summary</span>
+      <div className="blur e-blur1" style={{ background: "var(--purple)" }}></div>
+      <div className="blur e-blur2" style={{ background: "skyblue" }}></div>
 
       </div>
       <Swiper
@@ -53,7 +53,7 @@ const Testimonial = () => {
         {clients.map((client, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="testimonial">
+              <div className="education">
                 <img src={client.img} alt="" />
                 <span>{client.review}</span>
               </div>
@@ -65,4 +65,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Education;

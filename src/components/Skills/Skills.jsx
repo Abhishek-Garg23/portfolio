@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Services.css";
+import "./Skills.css";
 import Card from "../Card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
@@ -8,7 +8,7 @@ import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
 
-const Services = () => {
+const Skills = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -20,17 +20,14 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="skills" id="skills">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
+        <span style={{ color: darkMode ? "white" : "" }}>My Professional</span>
+        <span>Skills</span>
+        <span>To obtain professional and financial heights both for the organization and 
+        <br/> self through my skills and knowledge and learn from present as well as establishments</span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -46,8 +43,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Chrome Extension"}
+            detail={"Chrome Extension: JavaScript"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +55,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Web Developer"}
+            detail={"Html, Css, JavaScript, React JS"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +67,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"MySQL/SQL"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Database Management System having knowledge of both SQL and MySQL"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
@@ -86,4 +83,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Skills;

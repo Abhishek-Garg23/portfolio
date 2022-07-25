@@ -1,4 +1,4 @@
-.services {
+.skills {
   padding: 0 3rem 0 3rem;
   display: flex;
   height: 30rem;
@@ -55,8 +55,8 @@
   left: -18rem;
 }
 
-@media screen and (max-width: 480px) {
-  .services {
+@media screen and (max-width: 1024px) {
+  .skills {
     margin-top: 0;
     flex-direction: column;
     gap: 5rem;

@@ -3,7 +3,7 @@ import React from "react";
 import './FloatingDiv.css'
 
 
-const FloatinDiv = ({img, text1, text2}) => {
+const FloatingDiv = ({img, text1, text2}) => {
   return (
     // darkMode
     <div className="floatingDiv">
@@ -17,4 +17,4 @@ const FloatinDiv = ({img, text1, text2}) => {
   );
 };
 
-export default FloatinDiv;
+export default FloatingDiv;
